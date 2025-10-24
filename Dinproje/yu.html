@@ -3398,23 +3398,17 @@
             navbar.style.background = 'rgba(26, 95, 122, 0.95)';
             navbar.style.backdropFilter = 'blur(15px)';
         }
-            // PDF İndirme Fonksiyonu
-    function downloadPDF() {
-        // PDF dosyasının URL'sini buraya ekleyin
-        const pdfUrl = '\Dinproje\islamiyet.pdf';
-        
-        // Yeni sekmede PDF'i aç
-        window.open(pdfUrl, '_blank');
-        
-        // Alternatif olarak direkt indirme için:
-        // const link = document.createElement('a');
-        // link.href = pdfUrl;
-        // link.download = 'Islam_Bilim_Mirasi.pdf';
-        // link.click();
-    }
+function openPDF() {
+    // Klasör içindeki PDF için yol belirtin
+    const pdfUrl = 'Dinproje/islamiyet.pdf'; // veya './documents/islamiyet.pdf'
+    
+    // Yeni sekmede PDF'i aç
+    window.open(pdfUrl, '_blank');
+}
     });
 </script>
 </body>
 
 </html>
+
 
